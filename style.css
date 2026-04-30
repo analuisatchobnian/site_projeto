@@ -5,7 +5,7 @@ body {
 .tela_home {
     width: 100vw;
     height: 100vh;
-    background-image: url("../img/fundo.png");
+    background-image: url("./img/fundo.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 }
 
 .imagem_quadrado {
-    background-image: url("../img/scoot.jpg");
+    background-image: url("./img/scoot.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -128,7 +128,7 @@ body {
 }
 
 .imagem_ep_morte {
-    background-image: url("../img/alissonmorte.png");
+    background-image: url("./img/alissonmorte.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -163,7 +163,7 @@ body {
     font-family: "Poppins", sans-serif;
 }
 .imagem_ep_motel {
-    background-image: url("../img/motel.png");
+    background-image: url("./img/motel.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -199,7 +199,7 @@ body {
 }
 
 .imagem_ep_radio {
-    background-image: url("../img/radio.png");
+    background-image: url("./img/radio.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
