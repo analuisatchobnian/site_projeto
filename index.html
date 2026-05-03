@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teen Wolf</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_cadastro.css">
 </head>
 
 <body>
@@ -15,33 +16,106 @@
                 <nav class="topicos">
                     <ul class="topicos-barra">
                         <li><a href="#home" class="bt_home">HOME</a></li>
-                        <li><a href="#" class="bt_hist">HISTÓRIA</a></li>
-                        <li><a href="#" class="bt_cur">CURIOSIDADES</a></li>
-                        <li><a href="#" class="bt_cad">CADASTRO</a></li>
-                        <li><a href="#" class="bt_log">LOGIN</a></li>
+                        <li><a href="#" class="bt_hist" id="id_hist">HISTÓRIA</a></li>
+                        <li><a href="#" class="bt_cur" id="id-cur">CURIOSIDADES</a></li>
+                        <li><a href="#" class="bt_cad" id="id_cad" onclick="irCadastro()">CADASTRO</a></li>
+                        <li><a href="#" class="bt_log" onclick="irParaLogin()">LOGIN</a></li>
                     </ul>
                 </nav>
-                <div class="titulo_home"><p>Bem Vindo ao <br> Universo Teen Wolf</p></div>
-                <div class="paragrafo_home"><p>Descubra mais sobre esse universo sobrenatural misterioso.<br>
-                                               Explore os mistérios mais sombrios e bizarros, <br>criaturas perigosas e segredos que se escondem na lua cheia.
-                                               <br>Acompanhe a jornada épica de Scott McCall e sua alcateia,<br> enfrentando desafios intensos, inimigos poderosos <br>e escolhas que podem mudar tudo.</p></div>
-                <div class="episodios"><p>Episódios Imperdíveis</p></div>
-                <div class="div_episodios">
-                <div class="titulo_ep_morte">Insaciável</div>
-                <div class="imagem_ep_morte"></div>
-                <div class="descricao_ep_morte"><p>Durante uma batalha contra o Void Stiles,<br>Alisson morre com uma espada nas costas. <br> Esse é considerado um dos episódios mais<br> tristes da série</p></div>
-                <div class="titulo_ep_motel">Motel Califórnia</div>
-                <div class="imagem_ep_motel"></div>
-                <div class="descricao_ep_motel"><p>Encurralados, Scoot e seus amigos passam por <br>experiências estranhas dentro de um motel no <br>meio da estrada que é alvo de mais de 200 suicídios.<br> A partir disso todos os seres sobrenaturais presentes <br>começam a ter alucinações bizarras</p></div>
-                <div class="titulo_ep_radio">Silêncio de Rádio</div>
-                <div class="imagem_ep_radio"></div>
-                <div class="descricao_ep_radio"><p>Após desaparecer Stiles fica preso <br>em uma estação de trem misteriosa,<br>junto com todos que desapareceram de Beacon Hills.<br> Stiles sente como se todos <br>estivessem em uma longa hipinose </p></div>
+                <div class="titulo_home">
+                    <p>Bem Vindo ao <br> Universo Teen Wolf</p>
                 </div>
-                <hr class="linha1"></div>
-                <hr class="linha2"></div>
+                <div class="paragrafo_home">
+                    <p>Descubra mais sobre esse universo sobrenatural misterioso.<br>
+                        Explore os mistérios mais sombrios e bizarros, <br>criaturas perigosas e segredos que se
+                        escondem na lua cheia.
+                        <br>Acompanhe a jornada épica de Scott McCall e sua alcateia,<br> enfrentando desafios intensos,
+                        inimigos poderosos <br>e escolhas que podem mudar tudo.
+                    </p>
+                </div>
+                <div class="episodios">
+                    <p>Episódios Imperdíveis</p>
+                </div>
+                <div class="div_episodios">
+                    <div class="titulo_ep_morte">Insaciável</div>
+                    <div class="imagem_ep_morte"></div>
+                    <div class="descricao_ep_morte">
+                        <p>Durante uma batalha contra o Void Stiles,<br>Alisson morre com uma espada nas costas. <br>
+                            Esse é considerado um dos episódios mais<br> tristes da série</p>
+                    </div>
+                    <div class="titulo_ep_motel">Motel Califórnia</div>
+                    <div class="imagem_ep_motel"></div>
+                    <div class="descricao_ep_motel">
+                        <p>Encurralados, Scoot e seus amigos passam por <br>experiências estranhas dentro de um motel no
+                            <br>meio da estrada que é alvo de mais de 200 suicídios.<br> A partir disso todos os seres
+                            sobrenaturais presentes <br>começam a ter alucinações bizarras
+                        </p>
+                    </div>
+                    <div class="titulo_ep_radio">Silêncio de Rádio</div>
+                    <div class="imagem_ep_radio"></div>
+                    <div class="descricao_ep_radio">
+                        <p>Após desaparecer Stiles fica preso <br>em uma estação de trem misteriosa,<br>junto com todos
+                            que desapareceram de Beacon Hills.<br> Stiles sente como se todos <br>estivessem em uma
+                            longa hipinose </p>
+                    </div>
+                </div>
+                <hr class="linha1">
+            </div>
+            <hr class="linha2">
+            </div>
             <div class="imagem_quadrado"></div>
         </header>
     </section>
+
+    <section>
+        <main>
+
+
+            <div id="tela_cadastro" class="div_tela_cadastro_login" style="display: none;">
+                <div class="img_cadastro">
+                    <h2 class="tituloCadastro">Junte-se á Alcateia</h2> <br>
+                    NOME COMPLETO <br>
+                    <input class='ipt' type="text" id="ipt_Nome" placeholder="Scoot Mcall"> <br><br>
+                    USUÁRIO (EMAIL) <br>
+                    <input class='ipt' type="text" id="ipt_User" placeholder="alfa@gmail.com"> <br><br>
+                    SENHA <br>
+                    <input class='ipt' type=" password" id="ipt_Senha_User" placeholder="BeaconHills123"> <br><br>
+
+                    <button id="button_registro" onclick="Registrar()">Cadastrar</button> <br><br>
+                    <button class='acesso' onclick="irLogin()">Já tem conta? Faça Login</button>
+                </div>
+            </div>
+
+            <div id="tela_login" class="img_login" style="display: none;">
+
+                <nav class="barra_login">
+                    <ul class="topicos_login">
+                        <li><a href="#home" class="bt_home">HOME</a></li>
+                        <li><a href="#" class="bt_hist" id="id_hist">HISTÓRIA</a></li>
+                        <li><a href="#" class="bt_cur" id="id-cur">CURIOSIDADES</a></li>
+                        <li><a href="#tela_cadastro" class="bt_cad" id="id_cad" onclick="irCadastro()">CADASTRO</a></li>
+                        <li><a href="#" class="bt_log" onclick="irParaLogin()">LOGIN</a></li>
+                    </ul>
+                </nav>
+                <div class="box_login">
+                    <h2 class="tituloLogin">FAÇA LOGIN</h2>
+
+                    <p class="topo">USUÁRIO/EMAIL</p>
+                    <input class='ipt' type="text" id="ipt_Login_User" placeholder="alfa@gmail.com"><br><br>
+
+                    <p class="topo1">SENHA</p>
+                    <input class='ipt1' type="password" id="ipt_Login_Senha" placeholder="BeaconHills123"><br><br>
+
+                    <button id="button_validar" onclick="Validar()">Entrar</button><br><br>
+                    <button id="ir_cadastro" onclick="irCadastro()">Não tem conta? Cadastre-se</button>
+                </div>
+
+            </div>
+
+        </main>
+        <div id="div_msg"></div>
+    </section>
+    <script src="cadastro_log.js"></script>
 </body>
 
 </html>
